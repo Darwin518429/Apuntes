@@ -12,6 +12,7 @@ export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img }: 
       <h2>{titulo}</h2>
       {subtitulo &&(<p>{subtitulo}</p>)}
 <p>{texto}</p>
+
 {img &&(<Image
   src={img}   // ruta dentro de /public
   alt="Descripción de la imagen"
