@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import "./ui/globals.css";
 // import "./ui/globals.css";
 
 const geistSans = Geist({
@@ -24,10 +25,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <header>
           <h1>Darwin apuntes </h1>
-          <a href="#">Opcion 1 </a>
-          <a href="#">Opcion 2 </a>
-          <a href="#">Opcion 3 </a>
-          <a href="#">Opcion 4 </a>
+          <nav>
+          <a href="#">Programacion  </a>
+          <a href="#">Base de datos</a>
+          <a href="#"> x algo </a>
+          <a href="#">Marcas  </a>
+          </nav>
         </header>
         {children}
         </body>
