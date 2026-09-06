@@ -1,4 +1,9 @@
-
+.tarjeta{
+  border: solid black 2px;
+ display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /*.page {
   --background: #fafafa;
   --foreground: #fff;
