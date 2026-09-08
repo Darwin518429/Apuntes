@@ -4,6 +4,21 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.TarjetaVertical{
+  width: 500px;
+  height: 100%;
+    border: solid black 2px;
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+ .imagen{
+   width: 100%;
+
+}
 /*.page {
   --background: #fafafa;
   --foreground: #fff;

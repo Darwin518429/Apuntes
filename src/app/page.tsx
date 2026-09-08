@@ -1,4 +1,4 @@
-import Image from "next/image"
+import TarjetaVertical from "@/app/components/tarjetasLink";
 import TarjetaInfo from "@/app/components/intro"; // El @ indica que comienza a buscar dentro de  la carpeta que esta todo el poroyecto osea APUNTES comenzara a buscar 
 
 export default function Home() {
@@ -9,15 +9,25 @@ export default function Home() {
         titulo="¡ MIS APUNTES :O !"  // Son los parametros
         subtitulo="APUNTES HECHOS CON NEXT JS "
         texto="Aquí encontrarás todos mis apuntes organizados(mas o menos :/) y actualizados que voy creando durante mi aprendizaje durante el ciclo."
+        img="/gallardo.jpg"
+        priority
       >
-        <Image
-  src="/gallardo.jpg"   // ruta dentro de /public
-  alt="Descripción de la imagen"
-  width={300}
-  height={300}
-  priority /*Decirle a next js que cargue lo mas rapida esta imagen  */
-/>
+     <p>Contenido que tendra los apuntes:</p>
+     <ul>
+      <li>Base de datos</li>
+      <li>Programacion</li>
+      <li>Marcas</li>
+     </ul>
         </TarjetaInfo>
+      <TarjetaVertical    
+      titulo="Programacion"  // Son los parametros
+        texto="De momento hay Js y Java "
+        img="/gallardo.jpg"
+        link="#"
+        >
+        
+      </TarjetaVertical>
+        
         </main>
     </div>
   );
