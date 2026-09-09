@@ -24,12 +24,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <header>
-          <h1>Darwin apuntes </h1>
+        <a href="./">  <h1>Darwin apuntes </h1> </a>
           <nav>
-          <a href="#">Programacion  </a>
-          <a href="#">Base de datos</a>
-          <a href="#"> x algo </a>
-          <a href="#">Marcas  </a>
+          <a href="/Programacion">Programacion  </a>
+          <a href="/bd">Base de datos</a>
+          <a href="/marcas"> Marcas </a>
+          <a href="#">Mas  </a>
           </nav>
         </header>
         {children}

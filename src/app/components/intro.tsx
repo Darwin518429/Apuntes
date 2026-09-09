@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import styles from "@/app/ui/page.module.css"
+import styles from "@/app/ui/componente.module.css"
 import Image from "next/image"
 interface TarjetaInfoProps { // Esto te sirve para  especiuficar que proeidades debe de tener 
   titulo: string;

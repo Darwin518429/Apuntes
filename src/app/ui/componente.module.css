@@ -5,6 +5,10 @@
   justify-content: space-between;
 }
 
+.agruparHorizontal{
+  display: flex ;
+  flex-flow: row wrap;
+}
 .TarjetaVertical{
   width: 500px;
   height: 100%;
@@ -16,7 +20,10 @@
 
 }
  .imagen{
-   width: 100%;
+
+  margin: 0;
+   width: 100%; 
+   height: auto;
 
 }
 /*.page {
