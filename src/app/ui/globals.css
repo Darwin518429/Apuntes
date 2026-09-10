@@ -24,7 +24,7 @@ div, div *{
   flex-flow: row wrap;
   justify-content: space-around;
  }
- header nav a {
+ header nav a , header a  {
 color: inherit;         
   text-decoration: none;  
 }

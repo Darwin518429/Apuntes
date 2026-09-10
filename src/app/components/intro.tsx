@@ -24,8 +24,8 @@ export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,pri
              { img && (<Image
         src={img}   // ruta dentro de /public
         alt="imagen"
-        width={300}
-        height={300}
+        width={250}
+        height={250}
         priority  = {priority}/*Decirle a next js que cargue lo mas rapida quep uede esta imagen  */
       />)}
     </div>
