@@ -21,10 +21,23 @@ export const metadata: Metadata = {
 };
 
 //OPCIONES
-const subopciones:Formato[] = [
+/*const subopciones:Formato[] = [
   { txt: 'Opción 1', url: './' },
   { txt: 'Opción 2', url: './' },
   { txt: 'Opción 3', url: './' },
+]*/
+
+const subopciones: Formato[] = [
+  { txt: 'Opción 1', url: './opcion-1' },
+  { txt: 'Opción 2', url: './opcion-2' },
+  {
+    txt: 'Herramientas',        //submenu
+    url: '#',
+    subopciones: [
+      { txt: 'Sub 1', url: './sub-1' },
+      { txt: 'Sub 2', url: './sub-2' },
+    ],
+  },
 ]
 
 // TSX es commo un jsx extension pa meter html 
@@ -35,6 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <header>
         <a href="./" > <h1>Darwin apuntes (Inicio)</h1> </a>
+        <br/>
           <nav>
           <a href="/Programacion">Programacion  </a>
           <a href="/bd">Base de datos</a>
