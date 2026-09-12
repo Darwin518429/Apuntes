@@ -34,7 +34,7 @@ const MAS: Formato[] = [
   },
 ]
 const PROGRAMACION: Formato[] =[
-  { txt: 'Programacion', url: './Programacion' },
+  { txt: 'Programacion', url: '/es/Programacion' },
   { txt: 'Introduccion', url: './opcion-2' },
   {
     txt: 'JavaScript',        //submenu
@@ -54,10 +54,10 @@ const PROGRAMACION: Formato[] =[
 
 
 const BD: Formato[] =[
-  { txt: 'BD', url: './Programacion' },
-  { txt: 'Introduccion', url: './opcion-2' },
+  { txt: 'BD', url: '/es/bd' },
+  { txt: 'Introduccion', url: '/opcion-2' },
   {
-    txt: 'JavaScript',        //submenu
+    txt: 'OTRO',        //submenu
     url: '#',
     subopciones: [
       { txt: 'Strings', url: './sub-1' },
@@ -68,7 +68,7 @@ const BD: Formato[] =[
 
 
 const MARCAS: Formato[] =[
-  { txt: 'Programacion', url: './Programacion' },
+  { txt: 'Programacion', url: './Programac' },
   { txt: 'Introduccion', url: './opcion-2' },
   {
     txt: 'JavaScript',        //submenu
@@ -87,11 +87,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <header>
-        <a href="./" > <h1>Darwin apuntes (Inicio)</h1> </a>
+        <a href="/" > <h1>Darwin apuntes (Inicio)</h1> </a>
         <br/>
           <nav>
-       <Desplegable txt="Base de datos" opciones={PROGRAMACION}></Desplegable>
+       <Desplegable txt="Base de datos" opciones={BD}></Desplegable>
         <Desplegable txt="Programacion" opciones={PROGRAMACION}/>
+        <Desplegable txt="Marcas" opciones={MARCAS}/>
         <Desplegable txt="Mas" opciones={MAS}></Desplegable>
           </nav>
         </header>
