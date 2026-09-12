@@ -63,6 +63,8 @@ align-items: center;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   z-index: 1020;
+    max-height: 300px;      /* ← límite de altura, ajusta el número a tu gusto */
+  overflow-y: auto;       /* ← si se pasa del límite, aparece scroll vertical */
 }
 
 .item {

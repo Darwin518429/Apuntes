@@ -9,6 +9,7 @@ export interface Formato{
     txt:string
     url:string
     subopciones?: Formato[]
+    mainurl?:string;
 };
  
 interface DropdownProp{

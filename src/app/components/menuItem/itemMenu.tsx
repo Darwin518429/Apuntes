@@ -12,10 +12,10 @@ interface ItemMenuProp {
 export default function ItemMenu({ item }: ItemMenuProp) {
  
   const [open, setOpen] = useState(false)
-  const tieneHijos = item.subopciones && item.subopciones.length > 0 // La primera condicion me sirve apra comrrovar si se ha inserta la propiedad subopciones y lo otro es par acomprobar si hay mas de un elemento,
-
+  const tieneHijos = item.subopciones && item.subopciones.length > 0  // La primera condicion me sirve apra comrrovar si se ha inserta la propiedad subopciones y lo otro es par acomprobar si hay mas de un elemento,
+  //const enlaceprincipal = !!item.mainurl;
 //En caso de no  introducir solo insertar un Link 
-  if (!tieneHijos) {
+  if (!tieneHijos ) {
     return (
       <li className={styles.item}>
         <Link href={item.url} className={styles.link}>{item.txt}</Link>
@@ -23,15 +23,17 @@ export default function ItemMenu({ item }: ItemMenuProp) {
     )
   }
 
+  
+//Encaso detenre + de una opcion listara el componente.
   return (
     <li className={styles.item}>
       <button onClick={() => setOpen(!open)} className={`${styles.link} ${styles.boton}`}>
         {item.txt}
-        <span className={`${styles.flecha} ${open ? styles.flechaAbajo : ''}`}>▶</span>
+        <span className={`${styles.flecha} ${open ? styles.flechaAbierta : ''}`}>▶</span>
       </button>
       {open && (
         <ul className={styles.submenu}>
-          {item.subopciones!.map((sub) => (
+          {item.subopciones!.map((sub) => ( // La parte donde poner subopciones! el ! aviso a ts que no nunca sera undefined
             <ItemMenu key={sub.txt} item={sub} />
           ))}
         </ul>

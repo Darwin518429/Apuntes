@@ -21,13 +21,7 @@ export const metadata: Metadata = {
 };
 
 //OPCIONES
-/*const subopciones:Formato[] = [
-  { txt: 'Opción 1', url: './' },
-  { txt: 'Opción 2', url: './' },
-  { txt: 'Opción 3', url: './' },
-]*/
-
-const subopciones: Formato[] = [
+const MAS: Formato[] = [
   { txt: 'Opción 1', url: './opcion-1' },
   { txt: 'Opción 2', url: './opcion-2' },
   {
@@ -39,6 +33,52 @@ const subopciones: Formato[] = [
     ],
   },
 ]
+const PROGRAMACION: Formato[] =[
+  { txt: 'Programacion', url: './Programacion' },
+  { txt: 'Introduccion', url: './opcion-2' },
+  {
+    txt: 'JavaScript',        //submenu
+    url: '#',
+    subopciones: [
+      { txt: 'Strings', url: './sub-1' },
+      { txt: 'Variables', url: './sub-2' },
+        { txt: 'Sings', url: './sub-1' },
+      { txt: 'Varbles', url: './sub-2' },
+        { txt: 'Sngs', url: './sub-1' },
+      { txt: 'Vailes', url: './sub-2' },
+      { txt: 'Vles', url: './sub-2' },
+
+    ],
+  },  
+];
+
+
+const BD: Formato[] =[
+  { txt: 'BD', url: './Programacion' },
+  { txt: 'Introduccion', url: './opcion-2' },
+  {
+    txt: 'JavaScript',        //submenu
+    url: '#',
+    subopciones: [
+      { txt: 'Strings', url: './sub-1' },
+      { txt: 'Variables', url: './sub-2' },
+    ],
+  },  
+];
+
+
+const MARCAS: Formato[] =[
+  { txt: 'Programacion', url: './Programacion' },
+  { txt: 'Introduccion', url: './opcion-2' },
+  {
+    txt: 'JavaScript',        //submenu
+    url: '#',
+    subopciones: [
+      { txt: 'Strings', url: './sub-1' },
+      { txt: 'Variables', url: './sub-2' },
+    ],
+  },  
+];
 
 // TSX es commo un jsx extension pa meter html 
 //layout es coo una plantilla generixa que tendran t odas las paginas 
@@ -50,10 +90,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <a href="./" > <h1>Darwin apuntes (Inicio)</h1> </a>
         <br/>
           <nav>
-          <a href="/Programacion">Programacion  </a>
-          <a href="/bd">Base de datos</a>
-          <a href="/marcas"> Marcas </a>
-         <Desplegable txt="Mas" opciones={subopciones}></Desplegable>
+       <Desplegable txt="Base de datos" opciones={PROGRAMACION}></Desplegable>
+        <Desplegable txt="Programacion" opciones={PROGRAMACION}/>
+        <Desplegable txt="Mas" opciones={MAS}></Desplegable>
           </nav>
         </header>
         {children}
