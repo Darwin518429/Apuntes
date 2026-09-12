@@ -31,7 +31,7 @@
 .wrapper {
   position: relative;
   display: inline-block;
-border :1px solid black;
+/*border :1px solid black;*/
 display: flex;   
 flex-direction: column;       /* para que se comporte igual que los <a> del nav */
 align-items: center;
