@@ -1,0 +1,12 @@
+.encabezado{
+    background-color: blue;
+    color: white;
+    width: 350px;
+    height: 100px;
+     display: flex;
+  justify-content: center;
+  align-items: center;
+   margin: 0 auto; 
+  
+}
+.encabezado * {font-size: 2.5rem;}

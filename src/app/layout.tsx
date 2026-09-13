@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pagina principal ",
+  title: "MIS APUNTES",
   description: "Apuntes ",
 };
 
@@ -96,7 +96,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Desplegable txt="Mas" opciones={MAS}></Desplegable>
           </nav>
         </header>
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );

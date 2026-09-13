@@ -5,7 +5,6 @@ import TarjetaInfo from "@/app/components/intro"; // El @ indica que comienza a 
 export default function Home() {
   return (
     <div>
-      <main >
         <TarjetaInfo  // Nombre de la tarjeta 
           titulo="¡ MIS APUNTES :O !"  // Son los parametros
           subtitulo="APUNTES HECHOS CON NEXT JS "
@@ -50,9 +49,6 @@ export default function Home() {
           </TarjetaVertical>
 
         </Agrupar>
-
-
-      </main>
     </div>
   );
 }
