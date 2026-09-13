@@ -8,10 +8,12 @@ interface TarjetaInfoProps { // Esto te sirve para  especiuficar que proeidades 
   img?: string;
   priority?:boolean;
   children?: ReactNode;
-  
+  Width?:number;
+  Height?: number;
+  txtImg?:string
 }
 // Saldra un aviso que  la imagen mas  grande puede afectar el rendimiento de la web hya que tratarlo
-export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,priority = false,  children }: TarjetaInfoProps) {
+export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,priority = false,  children, Width= 250, Height = 250,txtImg }: TarjetaInfoProps) {
   return (
     <div className={styles.tarjeta}>
      <div>
@@ -21,13 +23,22 @@ export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,pri
       <hr/>
       {children}
       </div>
-             { img && (<Image
+   
+             { img && (
+              
+      <figure>
+        <Image
         src={img}   // ruta dentro de /public
         alt="imagen"
-        width={250}
-        height={250}
+        width={Width}
+        height={Height}
         priority  = {priority}/*Decirle a next js que cargue lo mas rapida quep uede esta imagen  */
-      />)}
+      />
+      <figcaption>{txtImg}</figcaption>
+      </figure>
+              )
+      }
+      
     </div>
   );
 }
