@@ -14,7 +14,7 @@ import {TarjetaInfo} from "@/types"
   txtImg?:string
 }*/
 // Saldra un aviso que  la imagen mas  grande puede afectar el rendimiento de la web hya que tratarlo
-export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,priority = false,  children, Width= 250, Height = 250,txtImg }: TarjetaInfo) {
+export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,priority = false,  children,txtImg }: TarjetaInfo) {
   return (
     <div className={styles.tarjeta}>
      <div>
@@ -27,12 +27,12 @@ export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,pri
    
              { img && (
               
-      <figure>
+      <figure className={styles.imagen_mediano}>
         <Image
         src={img}   // ruta dentro de /public
         alt="imagen"
-        width={Width}
-        height={Height}
+        fill
+        sizes="100vw"
         priority  = {priority}/*Decirle a next js que cargue lo mas rapida quep uede esta imagen  */
       />
       <figcaption>{txtImg}</figcaption>

@@ -3,7 +3,7 @@ import Style_titulo from "@/app/ui/titulos.module.css";
 import Style_componente from "@/app/ui/componente.module.css"
 import Image from 'next/image'
 import TarjetaFoto from '@/app/components/TextoImg/intro'
-import Foto from "@/app/components/galeriaImg/foto"
+
 export default function BasedeDatos() {
     return (<div>
         <header className={Style_titulo.encabezado}>   <h1 > BASE DE DATOS</h1></header>
@@ -79,7 +79,7 @@ export default function BasedeDatos() {
         </Parragrafo>
 
 
-        <TarjetaFoto titulo="Otros conceptos" texto="Diferentes conceptos" img="/bd/introduccion/bd_2.png" Width={500}>
+        <TarjetaFoto titulo="Otros conceptos" texto="Diferentes conceptos" img="/bd/introduccion/bd_2.png">
             <ul>
                 <li><strong>Clave-valor: </strong>bd no relacional , para guardar los datos  los almacena como una coleccion/lista de clave-valor en la que cada clave es una id unica que esta relacionada a un dato en especifico
                 </li>
@@ -91,13 +91,13 @@ export default function BasedeDatos() {
         </TarjetaFoto>
 
 
-        <TarjetaFoto titulo="GESTOR BD" texto="Definicion sobre gestor bd " img="/bd/introduccion/bd_1.png" Width={500} txtImg=" EJ:Por ejemplo, en una app web, el gestor se pone al  medio entre la aplicación y la base de datos, manejando toda la lógica de acceso y organización de los datos, lo que hace el trabajo más fácil.
+        <TarjetaFoto titulo="GESTOR BD" texto="Definicion sobre gestor bd " img="/bd/introduccion/bd_1.png"  txtImg=" EJ:Por ejemplo, en una app web, el gestor se pone al  medio entre la aplicación y la base de datos, manejando toda la lógica de acceso y organización de los datos, lo que hace el trabajo más fácil.
 ">
             <ul>
                 <li><strong>Gestor de Base de Datos (DBMS)</strong>  es un programa que gestiona i  maneja  con la base de datos, haciendolo facil  a la hora de tratar los datos sin que la aplicación tenga que comunicarse directamente con ellos. Permite almacenar, modificar, consultar... , tambien asegura que varios usuarios o aplicaciones puedan acceder a los datos al mismo tiempo sin problemas.
                 </li>
 
-                <li> <strong> El gestor de db puede  ser una aplicacion  o libreria:</strong> en caso de ser una aplicacion necessitamos un "sistema de comunicacion de processos" para poder comunicarnos con la base de datos(ej: modelo cliente servidor).
+                <li> <strong> El gestor de db puede  ser una aplicacion  o libreria:</strong> en caso de ser una aplicacion necessitamos un {"'"}sistema de comunicacion de processos{"'"}para poder comunicarnos con la base de datos(ej: modelo cliente servidor).
                     Existen diferentes  formas  de poder enviar/recibir datos(comunicacion)  --{'>'}  pipes,  red, memoria compartida.
                     Pero si son librerias tenemos que vincularlo al nuestro app/programa.</li>
 
@@ -112,7 +112,7 @@ export default function BasedeDatos() {
                 Controlar quién puede acceder a los datos  y mantener la seguridad y la integridad de los datos, es decir, protegerlos y asegurarse de que no se corrompan ni se pierdan.
             </p>
 
-             <p>La info es un recurso importante a la hora de tomar decisines  de las empresas,  hay una necessidad  de mantener algun tipo de infraestructura para manejar la info  de manera rapida con el esfuerzo minimo, es infraestructura se llama "Sistem ade info"
+             <p>La info es un recurso importante a la hora de tomar decisines  de las empresas,  hay una necessidad  de mantener algun tipo de infraestructura para manejar la info  de manera rapida con el esfuerzo minimo, es infraestructura se llama Sistema de info
 </p>
         </TarjetaFoto>
 

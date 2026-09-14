@@ -10,11 +10,12 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("/OtroFondo.jpg");
-  /* Intentaar dar el efecto de apagado  */
-  background-color: rgba(0, 0, 0, 0.7); 
-  background-blend-mode: multiply;
+  background-image: url("/OtroFondo.jpg");  
   background-repeat: repeat;
+}
+
+main div  {
+  margin-top:30px
 }
 
 div,
@@ -46,3 +47,30 @@ header nav div * {
   text-decoration: none;
   align-items: center;
 }
+
+/*Adaptar */
+/*ESTO INDICA CUANDO ES PEQUEÑO O MAS */
+@media (max-width: 550px) {
+ div,
+div * {
+  margin:5px;
+  font-size: 1rem;
+}
+
+
+header {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  height: 150px;
+  font-size: 1rem;
+}
+
+
+
+
+}
+/*AQUI ES CUANDO SE APLICARA CUANDO  SEA IGUAL O MAYOR */
+/*@media (max-min: 768px) {
+ 
+}*/

@@ -7,8 +7,8 @@ export interface TarjetaInfo { // Esto te sirve para  especiuficar que proeidade
   img?: string;
   priority?:boolean;
   children?: ReactNode;
-  Width?:number;
-  Height?: number;
+  //Width?:number;
+  //Height?: number;
   txtImg?:string
 }
 

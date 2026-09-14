@@ -3,7 +3,7 @@
  display: flex;
   flex-direction: row;
   justify-content: space-between;
- 
+  width: auto ;
 }
 
 .tarjeta,.TarjetaVertical {
@@ -33,7 +33,7 @@ letter-spacing: 1px; /*Espacio entre letras*/
 
 }
 
-/*AJUSTAR IMAGE CON FILL*/
+/*AJUSTAR IMAGE CON FILL PARA EL COMPOENTE DE UNA GALERIA DE UNA SOLO IMAGEN */
 .imgAjustar{
   width: 500px;
   height: 300px;
@@ -125,3 +125,55 @@ align-items: center;
   margin: 0;
 }
 /*-----------------------*/
+/*IMAGENES*/
+.imagen_mediano{
+   position: relative;
+  width: 100%;
+  height: 500px;
+}
+/*ADAPTAR */
+@media (max-width: 550px) {
+
+ .imagen_mediano {
+    height: 250px;   /* más bajita en móvil */
+  }
+
+.tarjeta,.TarjetaVertical {
+letter-spacing: 1px; /*Espacio entre letras*/
+     line-height: 1.6; /*Esapacio en los àragrafos*/
+      background-color: white;
+      width: 350px;
+}
+.agruparHorizontal{
+  display: flex ;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.TarjetaVertical{
+  width: 250px;
+  height: 100%;
+    border: solid black 2px;
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+ .imagen{
+
+  margin: 0;
+   width: 100%; 
+   height: 300px;
+
+}
+
+/*AJUSTAR IMAGE CON FILL*/
+.imgAjustar{
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+
+}

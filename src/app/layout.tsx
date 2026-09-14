@@ -1,3 +1,4 @@
+import type { Viewport } from "next"
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./ui/globals.css";
@@ -15,12 +16,16 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+// Equivale el header 
 export const metadata: Metadata = {
   title: "MIS APUNTES",
   description: "Apuntes ",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+}
 //OPCIONES
 const MAS: FormatOpcion[] = [
   { txt: 'Opción 1', url: './opcion-1' },
@@ -47,8 +52,8 @@ const PROGRAMACION: FormatOpcion[] = [
       { txt: 'Varbles', url: './sub-2' },
       { txt: 'Sngs', url: './sub-1' },
       { txt: 'Vailes', url: './sub-2' },
-      { txt: 'Vles', url: './sub-2' },
-
+      { txt: 'Vles', url: './sub-2', subopciones:[ { txt: 'Vailes', url: './sub-2' }] },
+    
     ],
   },
 ];
