@@ -1,6 +1,6 @@
 import styles from "@/app/ui/componente.module.css"
 import Link from 'next/link'
-import {Formato} from "@/app/components/menuItem/despegableFinal"
+
 import ItemMenu from "./itemMenu"
 import { Opcionboton } from "@/types"
 /*interface opcionProp{
