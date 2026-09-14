@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 import styles from "@/app/ui/componente.module.css"
 import Image from "next/image"
-interface TarjetaInfoProps { // Esto te sirve para  especiuficar que proeidades debe de tener 
+import {TarjetaInfo} from "@/types"
+/*interface TarjetaInfoProps { // Esto te sirve para  especiuficar que proeidades debe de tener 
   titulo: string;
   subtitulo?: string; // El '?' significa que es opcional, por si solo quieres título
   texto: string;      // Este es obligatorio
@@ -11,9 +12,9 @@ interface TarjetaInfoProps { // Esto te sirve para  especiuficar que proeidades 
   Width?:number;
   Height?: number;
   txtImg?:string
-}
+}*/
 // Saldra un aviso que  la imagen mas  grande puede afectar el rendimiento de la web hya que tratarlo
-export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,priority = false,  children, Width= 250, Height = 250,txtImg }: TarjetaInfoProps) {
+export default function TarjetaInfoHorizontal({ titulo, subtitulo, texto,img,priority = false,  children, Width= 250, Height = 250,txtImg }: TarjetaInfo) {
   return (
     <div className={styles.tarjeta}>
      <div>

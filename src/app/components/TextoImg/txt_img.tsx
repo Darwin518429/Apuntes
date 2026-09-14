@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 import styles from "@/app/ui/componente.module.css"
 import Image from "next/image"
-interface TarjetaInfoProps { // Esto te sirve para  especiuficar que proeidades debe de tener 
+import {TarjetaInfop} from "@/types"
+/*interface TarjetaInfoProps { // Esto te sirve para  especiuficar que proeidades debe de tener 
   titulo: string;
   subtitulo?: string; // El '?' significa que es opcional, por si solo quieres título
 
@@ -11,9 +12,9 @@ parrafo: React.ReactElement<'p'>  //Especificar el tipo de <p>
   children?: ReactNode;
 
   
-}
+}*/
 // Saldra un aviso que  la imagen mas  grande puede afectar el rendimiento de la web hya que tratarlo
-export default function Personalizao({ titulo, subtitulo, parrafo,img,priority = false,  children }: TarjetaInfoProps) {
+export default function Personalizao({ titulo, subtitulo, parrafo,img,priority = false,  children }: TarjetaInfop) {
   return (
     <div className={styles.tarjeta}>
      <div>

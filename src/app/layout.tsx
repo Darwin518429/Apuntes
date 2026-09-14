@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./ui/globals.css";
 import {FormatOpcion} from "@/types"
 import Desplegable from "./components/menuItem/despegableFinal";
+import Link from "next/link";
 // import "./ui/globals.css";
 
 const geistSans = Geist({
@@ -87,7 +88,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <header>
-          <a href="./" > <h1>Darwin apuntes (Inicio)</h1> </a>
+          <Link href="/"><h1>Darwin apuntes (Inicio)</h1></Link>
           <br />
           <nav>
             <Desplegable txt="Base de datos" opciones={BD}></Desplegable>

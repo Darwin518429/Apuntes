@@ -1,11 +1,12 @@
 import Style_componente from "@/app/ui/componente.module.css"
-import Image from 'next/image'
-interface fotoUnica{
+import Image from 'next/image';
+import { FotoUnica } from "@/types";
+/*interface fotoUnica{
     Src:string
     Alt:string;
 
-}
-export default function fotoUnica({Src,Alt}:fotoUnica) {
+}*/
+export default function fotoUnica({Src,Alt}:FotoUnica) {
 
     return (
 
