@@ -31,7 +31,7 @@ const MAS: FormatOpcion[] = [
   { txt: 'Opción 1', url: './opcion-1' },
   { txt: 'Opción 2', url: './opcion-2' },
   {
-    txt: 'Herramientas',        //submenu
+    txt: 'SubOpcion',        //submenu
     url: '#',
     subopciones: [
       { txt: 'Sub 1', url: './sub-1' },
@@ -46,13 +46,13 @@ const PROGRAMACION: FormatOpcion[] = [
     txt: 'JavaScript',        //submenu
     url: '#',
     subopciones: [
-      { txt: 'Strings', url: './sub-1' },
-      { txt: 'Variables', url: './sub-2' },
-      { txt: 'Sings', url: './sub-1' },
-      { txt: 'Varbles', url: './sub-2' },
-      { txt: 'Sngs', url: './sub-1' },
-      { txt: 'Vailes', url: './sub-2' },
-      { txt: 'Vles', url: './sub-2', subopciones:[ { txt: 'Vailes', url: './sub-2' }] },
+      { txt: 'SUB1', url: './sub-1' },
+      { txt: 'SUB2', url: './sub-2' },
+      { txt: 'SUB3', url: './sub-1' },
+      { txt: 'SUB4', url: './sub-2' },
+      { txt: 'SUB5', url: './sub-1' },
+      { txt: 'SUB6', url: './sub-2' },
+      { txt: 'SUB7', url: './sub-2', subopciones:[ { txt: 'Vailes', url: './sub-2' }] },
     
     ],
   },
@@ -63,25 +63,25 @@ const BD: FormatOpcion[] = [
   { txt: 'Introduccion', url: '/es/bd' },
   { txt: 'Elegir un gestor bd', url: '/es/bd/gestoresBD' },
   {
-    txt: 'OTRO',        //submenu
+    txt: 'OPCIONA',        //submenu
     url: '#',
     subopciones: [
-      { txt: 'Strings', url: './sub-1' },
-      { txt: 'Variables', url: './sub-2' },
+      { txt: 'OPCIONB', url: './sub-1' },
+      { txt: 'OPCIONC', url: './sub-2' },
     ],
   },
 ];
 
 
 const MARCAS: FormatOpcion[] = [
-  { txt: 'Programacion', url: './Programac' },
+  { txt: 'mARCAS', url: './soon' },
   { txt: 'Introduccion', url: './opcion-2' },
   {
     txt: 'JavaScript',        //submenu
     url: '#',
     subopciones: [
-      { txt: 'Strings', url: './sub-1' },
-      { txt: 'Variables', url: './sub-2' },
+      { txt: 'Markdown', url: './sub-1' },
+      { txt: 'Html', url: './sub-2' },
     ],
   },
 ];
