@@ -1,6 +1,6 @@
-import Agrupar from "@/app/components/tarjetasAgruparH";
-import TarjetaVertical from "@/app/components/tarjetasLink";
-import TarjetaInfo from "@/app/components/intro"; // El @ indica que comienza a buscar dentro de  la carpeta que esta todo el poroyecto osea APUNTES comenzara a buscar 
+import Agrupar from "@/app/components/TextoImg/tarjetasAgruparH";
+import TarjetaVertical from "@/app/components/TextoImg/tarjetasLink";
+import TarjetaInfo from "@/app/components/TextoImg/intro"; // El @ indica que comienza a buscar dentro de  la carpeta que esta todo el poroyecto osea APUNTES comenzara a buscar 
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
             titulo="Programacion"  // Son los parametros
             texto="De momento hay Js y Java "
             img="/programacion.jpg"
-            link="/Programacion"
+            link="/es/programacion"
           >
 
           </TarjetaVertical>
@@ -34,7 +34,7 @@ export default function Home() {
             titulo="Base de datos "  // Son los parametros
             texto="Base de datos SQL y NoSQL"
             img="/bd.jpeg"
-            link="#"
+            link="./es/bd"
           >
 
           </TarjetaVertical>
@@ -45,7 +45,6 @@ export default function Home() {
             img="/html.jpg"
             link="#"
           >
-
           </TarjetaVertical>
 
         </Agrupar>

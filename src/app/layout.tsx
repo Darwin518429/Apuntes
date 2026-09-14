@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./ui/globals.css";
-import { Formato } from "@/app/components/menuItem/despegableFinal"
+import {FormatOpcion} from "@/types"
 import Desplegable from "./components/menuItem/despegableFinal";
 // import "./ui/globals.css";
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 //OPCIONES
-const MAS: Formato[] = [
+const MAS: FormatOpcion[] = [
   { txt: 'Opción 1', url: './opcion-1' },
   { txt: 'Opción 2', url: './opcion-2' },
   {
@@ -33,7 +33,7 @@ const MAS: Formato[] = [
     ],
   },
 ]
-const PROGRAMACION: Formato[] = [
+const PROGRAMACION: FormatOpcion[] = [
   { txt: 'Programacion', url: '/es/Programacion' },
   { txt: 'Introduccion', url: './opcion-2' },
   {
@@ -53,9 +53,9 @@ const PROGRAMACION: Formato[] = [
 ];
 
 
-const BD: Formato[] = [
+const BD: FormatOpcion[] = [
   { txt: 'Introduccion', url: '/es/bd' },
-  { txt: 'Mas', url: '/opcion-2' },
+  { txt: 'Elegir un gestor bd', url: '/es/bd/gestoresBD' },
   {
     txt: 'OTRO',        //submenu
     url: '#',
@@ -67,7 +67,7 @@ const BD: Formato[] = [
 ];
 
 
-const MARCAS: Formato[] = [
+const MARCAS: FormatOpcion[] = [
   { txt: 'Programacion', url: './Programac' },
   { txt: 'Introduccion', url: './opcion-2' },
   {
@@ -87,7 +87,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <header>
-          <a href="/" > <h1>Darwin apuntes (Inicio)</h1> </a>
+          <a href="./" > <h1>Darwin apuntes (Inicio)</h1> </a>
           <br />
           <nav>
             <Desplegable txt="Base de datos" opciones={BD}></Desplegable>

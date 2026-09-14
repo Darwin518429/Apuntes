@@ -2,11 +2,11 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { Formato } from './despegableFinal'
+import {FormatOpcion} from "@/types"
 import styles from '@/app/ui/componente.module.css';
 
 interface ItemMenuProp {
-  item: Formato
+  item: FormatOpcion;
 }
 
 export default function ItemMenu({ item }: ItemMenuProp) {

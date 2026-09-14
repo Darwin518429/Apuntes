@@ -1,13 +1,14 @@
 'use client'
 import { useState } from 'react'
+import { botonDespegable } from '@/types';
 import styles from "@/app/ui/componente.module.css"
-interface despProp{
+/*interface despProp{
 txt: string;
 clic: () => void; // Le especifcamos que se dbe de introducir una funcion que no devleve nada 
-}
+}*/
 //BOTON DEL DESPEGBLE 
 //Repreental boton donde mostrar los submenus 
-export default function Desplegable({txt,clic}:despProp){
+export default function Desplegable({txt,clic}:botonDespegable){
   const [open, setOpen] = useState(false)
     return( 
       <button onClick={() =>{ // Es una funcion flecha creada 

@@ -4,23 +4,24 @@ import styles from "@/app/ui/componente.module.css"
 import { useState } from 'react'
 import BotonDesplegable from '@/app/components/menuItem/botonDesplegable'
 import BotonOpciones from '@/app/components/menuItem/botonOpciones'
+import {BotonFinalIntroducir} from "@/types"
 //AQUI ES DONDE  MONTAMOS EL DESPEGABLE 
-export interface Formato{
+/*export interface Formato{
     txt:string
     url:string
     subopciones?: Formato[]
     mainurl?:string;
 };
- 
-interface DropdownProp{
+ */
+/*interface DropdownProp{
     txt:string,
     opciones:Formato[];
 }
+*/
 
 
 
-
-export default function Dropdown({txt,opciones}:DropdownProp) {
+export default function Dropdown({txt,opciones}:BotonFinalIntroducir) {
   const [open, setOpen] = useState(false)
 
   return (
